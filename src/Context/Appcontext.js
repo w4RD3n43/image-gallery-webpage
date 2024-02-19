@@ -9,8 +9,8 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(false)
   const [photos, setPhotos] = useState([])
   const [favouritePhotos, setFavouritePhotos] = useState([])
-  const [lightboxindex, setlightboxindex] = useState(0)
-  const [isLightboxOpen, setIslightboxopen] = useState(false)
+  // const [lightboxindex, setlightboxindex] = useState(0)
+  // const [isLightboxOpen, setIslightboxopen] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")
   const [searchText, setSearchText] = useState('')
   const [page, setPage] = useState(2)
@@ -25,13 +25,13 @@ const AppProvider = ({ children }) => {
     
   }
 //lightbox
-  const openLightbox = (index) => {
-    setlightboxindex(index)
-    setIslightboxopen(true)
-  }
-  const closeLightbox = () =>{
-    setIslightboxopen(false)
-  } 
+  // const openLightbox = (index) => {
+  //   setlightboxindex(index)
+  //   setIslightboxopen(true)
+  // }
+  // const closeLightbox = () =>{
+  //   setIslightboxopen(false)
+  // } 
 //Favourites logic
   const handleFavouriteClick =(photoId) => {
     const existingIndex = favouritePhotos.findIndex((favPhoto) => favPhoto.id  === photoId)
@@ -113,10 +113,10 @@ const AppProvider = ({ children }) => {
     handleFavouriteClick,
     handleShare,
     handleDownload,
-    openLightbox,
-    closeLightbox,
-    isLightboxOpen,
-    lightboxindex,
+    // openLightbox,
+    // closeLightbox,
+    // isLightboxOpen,
+    // lightboxindex,
     setSearchQuery,
     changeHandler,
     handleSubmit,

@@ -6,7 +6,9 @@ Context API: It utilizes the React Context API (createContext) to provide a glob
 
 Form Handling: It includes functions (changeHandler and handleSubmit) to manage form input for searching photos.
 
-Lightbox: It provides functionality (openLightbox and closeLightbox) to open and close a lightbox for viewing images in full size.
+Lightbox: It provides functionality (openLightbox and closeLightbox) to open and close a lightbox for viewing images in full size.{
+  Lightbox has to be removed due to version conflict
+}
 
 Favourites Logic: It allows users to add and remove photos from their list of favourite photos (handleFavouriteClick).
 

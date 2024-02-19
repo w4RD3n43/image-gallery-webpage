@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../Context/Appcontext'
 import { FaHeart, FaDownload, FaShare } from 'react-icons/fa';
-import Lightbox from 'react-image-lightbox';
+// import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 const Favourites = () => {
   const {
@@ -10,10 +10,10 @@ const Favourites = () => {
     handleFavouriteClick,
     handleShare,
     handleDownload,
-    closeLightbox,
-    openLightbox,
-    isLightboxOpen,
-    lightboxindex,
+    // closeLightbox,
+    // openLightbox,
+    // isLightboxOpen,
+    // lightboxindex,
     favouritePhotos
   } = useContext(AppContext);
   return (
@@ -28,7 +28,7 @@ const Favourites = () => {
                   <img
                     src={photo.urls.small}
                     alt={photo.alt_description}
-                    onClick={() => openLightbox(index)}
+                    // onClick={() => openLightbox(index)}
                     className='w-[400px] h-[267px] object-cover '
                   />
                 </div>
@@ -62,12 +62,12 @@ const Favourites = () => {
               </div>
             </div>
             
-              {isLightboxOpen && photos[lightboxindex] && (
+              {/* {isLightboxOpen && photos[lightboxindex] && (
               <Lightbox
                 mainSrc={photos[lightboxindex].urls.full}
                 onCloseRequest={closeLightbox}
               />
-          )}
+          )} */}
             </div>
             
           )

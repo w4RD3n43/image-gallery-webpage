@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AppContext } from '../Context/Appcontext';
 import Spinner from './Spinner';
 import { FaHeart, FaDownload, FaShare } from 'react-icons/fa';
-import Lightbox from 'react-image-lightbox';
+// import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; 
 
 const Home = () => {
@@ -12,10 +12,10 @@ const Home = () => {
     handleFavouriteClick,
     handleShare,
     handleDownload,
-    closeLightbox,
-    openLightbox,
-    isLightboxOpen,
-    lightboxindex
+    // closeLightbox,
+    // openLightbox,
+    // isLightboxOpen,
+    // lightboxindex
   } = useContext(AppContext);
 
   return (
@@ -31,7 +31,7 @@ const Home = () => {
                   <img
                     src={photo.urls.small}
                     alt={photo.alt_description}
-                    onClick={() => openLightbox(index)}
+                    // onClick={() => openLightbox(index)}
                     className='w-[400px] h-[267px] object-cover '
                     loading="lazy"
                   />
@@ -66,12 +66,12 @@ const Home = () => {
               </div>
             </div>
           ))}
-          {isLightboxOpen && photos[lightboxindex] && (
+          {/* {isLightboxOpen && photos[lightboxindex] && (
               <Lightbox
                 mainSrc={photos[lightboxindex].urls.full}
                 onCloseRequest={closeLightbox}
               />
-          )}
+          )} */}
         </div>
       )}
     </div>
