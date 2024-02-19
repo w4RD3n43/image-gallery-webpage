@@ -3,7 +3,7 @@ import { AppContext } from '../Context/Appcontext';
 import Spinner from './Spinner';
 import { FaHeart, FaDownload, FaShare } from 'react-icons/fa';
 // import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; 
+// import 'react-image-lightbox/style.css'; 
 
 const Home = () => {
   const {
