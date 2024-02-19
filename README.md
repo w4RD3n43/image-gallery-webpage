@@ -1,6 +1,6 @@
 
 
-  LIVE LINK - https://image-gallery-wepage-git-main-vitthal-hangarges-projects.vercel.app/
+  LIVE LINK - https://image-gallery-webpage-git-main-vitthal-hangarges-projects.vercel.app/
 
 
 This project is a React application that utilizes context and hooks to manage state and handle interactions with an API. Here's a description of its key features:
