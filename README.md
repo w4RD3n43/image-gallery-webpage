@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+This project is a React application that utilizes context and hooks to manage state and handle interactions with an API. Here's a description of its key features:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+State Management: It uses the useState hook to manage various states, including loading state, photo data, favourite photos, lightbox state, search query, search text, and pagination.
 
-## Available Scripts
+Context API: It utilizes the React Context API (createContext) to provide a global state for components within the app.
 
-In the project directory, you can run:
+Form Handling: It includes functions (changeHandler and handleSubmit) to manage form input for searching photos.
 
-### `npm start`
+Lightbox: It provides functionality (openLightbox and closeLightbox) to open and close a lightbox for viewing images in full size.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Favourites Logic: It allows users to add and remove photos from their list of favourite photos (handleFavouriteClick).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Image Sharing: It includes a function (handleShare) to share the URL of a photo via WhatsApp.
 
-### `npm test`
+Image Downloading: It provides functionality (handleDownload) to download a photo when clicked.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API Calling: It uses fetch to call the Unsplash API to fetch photos based on search queries and pagination.
 
-### `npm run build`
+Scrolling Behavior: It includes a scroll event listener to implement infinite scrolling when reaching the bottom of the page (handleScroll).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Resetting Scroll Position: It includes a useEffect hook to reset the scroll position to the top when new photos are loaded (useEffect(() => { window.scrollTo(0, 0); }, [photos]);).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall, this project demonstrates how to create a responsive image gallery with features like searching, favoriting, and lightbox view, using React and Tailwind CSS for styling.
